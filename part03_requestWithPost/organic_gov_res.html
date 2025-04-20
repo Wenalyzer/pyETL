@@ -1,0 +1,521 @@
+<html>
+ <head>
+  <title>
+  </title>
+  <meta content="Microsoft FrontPage 5.0" name="GENERATOR"/>
+  <meta content="no-cache" http-equiv="pragma"/>
+  <meta content="0" http-equiv="expires"/>
+  <meta content="no-cache" http-equiv="cache-control"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <style type="text/css">
+   <!--
+body {
+	margin-left: 18px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+  </style>
+  <link href="style3.css" rel="stylesheet" type="text/css"/>
+  <link href="nn.css" rel="stylesheet" type="text/css"/>
+  <script type="text/javascript">
+   var strProtocol = location.protocol;
+	//alert('Protocol='+strProtocol);
+　if ( strProtocol== 'http:' ){
+	    //location.href="https://organic.afa.gov.tw/InOrganic";
+  }
+  </script>
+  <script language="JavaScript">
+   function CheckData(form){
+	  if(document.form.YEAR.value=="" && document.form.qNnify_NO.value=="" && 
+	      document.form.qC_NAME.value=="" && document.form.qPaper_NO.value=="" &&
+		  document.form.qProduct_NAME.value==""){
+			  alert("請輸入查詢條件！");
+			  return false;
+	  }
+	  if(document.form.YEAR.value != ""){
+		  if(document.form.qNnify_NO.value=="" && 
+			  document.form.qC_NAME.value=="" && document.form.qPaper_NO.value=="" &&
+			  document.form.qProduct_NAME.value==""){
+				  alert("查詢條件如選擇年度時，必須至少再加其他條件之一！");
+				  return false;
+		  }
+	  }
+
+  }
+  </script>
+ </head>
+ <body class="txt1" leftmargin="0" marginheight="0" marginwidth="0" topmargin="0">
+  <form action="QueryApplyList" method="post" name="form" onsubmit="return(CheckData(this))">
+   <p>
+    <table border="0" cellpadding="0" cellspacing="0" width="801">
+     <tr>
+      <td align="center" valign="top" width="781">
+       <table align="center" border="1" bordercolordark="#333333" bordercolorlight="#333333" cellpadding="0" cellspacing="0" width="781">
+        <tr>
+         <td align="center" class="A02" colspan="3">
+          已核發同意文件查詢(
+          <font color="#FF0000">
+           農產品
+          </font>
+          )
+          <br/>
+          <input name="TYPE" type="hidden" value="1"/>
+          <br/>
+          <table align="center" border="0" bordercolordark="#333333" bordercolorlight="#333333" cellpadding="0" cellspacing="0" width="100%">
+           <tr>
+            <td width="3%">
+            </td>
+            <td width="16%">
+             年度：
+            </td>
+            <td colspan="2">
+             <select name="YEAR">
+              <option value="">
+               請選擇年度
+              </option>
+              <option value="98">
+               98
+              </option>
+              <option value="99">
+               99
+              </option>
+              <option value="100">
+               100
+              </option>
+              <option value="101">
+               101
+              </option>
+              <option value="102">
+               102
+              </option>
+              <option value="103">
+               103
+              </option>
+              <option value="104">
+               104
+              </option>
+              <option value="105">
+               105
+              </option>
+              <option value="106">
+               106
+              </option>
+              <option value="107">
+               107
+              </option>
+              <option value="108">
+               108
+              </option>
+              <option value="109">
+               109
+              </option>
+              <option value="110">
+               110
+              </option>
+              <option selected="" value="111">
+               111
+              </option>
+              <option value="112">
+               112
+              </option>
+              <option value="113">
+               113
+              </option>
+              <option value="114">
+               114
+              </option>
+             </select>
+            </td>
+           </tr>
+           <tr>
+            <td width="3%">
+            </td>
+            <td width="16%">
+             統一編號：
+            </td>
+            <td colspan="2">
+             <input name="qNnify_NO" type="text" value=""/>
+            </td>
+           </tr>
+           <tr>
+            <td width="3%">
+            </td>
+            <td width="16%">
+             廠商名稱：
+            </td>
+            <td colspan="2">
+             <input name="qC_NAME" type="text" value=""/>
+            </td>
+           </tr>
+           <tr>
+            <td width="3%">
+            </td>
+            <td width="16%">
+             同意文件字號：
+            </td>
+            <td colspan="2">
+             <input name="qPaper_NO" type="text" value=""/>
+            </td>
+           </tr>
+           <tr>
+            <td width="3%">
+            </td>
+            <td width="16%">
+             產品名稱：
+            </td>
+            <td width="22%">
+             <input name="qProduct_NAME" type="text" value="米"/>
+            </td>
+            <td width="59%">
+             <input class="input1" name="B" type="submit" value="查　　詢"/>
+            </td>
+           </tr>
+          </table>
+         </td>
+        </tr>
+        <tr>
+         <td align="center" width="355">
+          廠商名稱
+         </td>
+         <td align="center" width="197">
+          聯絡電話
+         </td>
+         <td align="center" width="211">
+          核發案件編號
+         </td>
+        </tr>
+        <tr>
+         <td>
+          統一生機開發股份有限公司
+         </td>
+         <td align="left">
+          03-4340372
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221034002&amp;Nnify_NO=16781797">
+           AGGR-111-1034-002
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          統一生機開發股份有限公司
+         </td>
+         <td align="left">
+          03-4340372
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221034008&amp;Nnify_NO=16781797">
+           AGGR-111-1034-008
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          統一生機開發股份有限公司
+         </td>
+         <td align="left">
+          03-4340372
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221034009&amp;Nnify_NO=16781797">
+           AGGR-111-1034-009
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          統一生機開發股份有限公司
+         </td>
+         <td align="left">
+          03-4340372
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221034018&amp;Nnify_NO=16781797">
+           AGGR-111-1034-018
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          青荷國際有限公司
+         </td>
+         <td align="left">
+          03-3594557
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221067003&amp;Nnify_NO=24407269">
+           AGGR-111-1067-003
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          青荷國際有限公司
+         </td>
+         <td align="left">
+          03-3594557
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221067006&amp;Nnify_NO=24407269">
+           AGGR-111-1067-006
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          青荷國際有限公司
+         </td>
+         <td align="left">
+          03-3594557
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221067020&amp;Nnify_NO=24407269">
+           AGGR-111-1067-020
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          青荷國際有限公司
+         </td>
+         <td align="left">
+          03-3594557
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221067021&amp;Nnify_NO=24407269">
+           AGGR-111-1067-021
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          青荷國際有限公司
+         </td>
+         <td align="left">
+          03-3594557
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221067033&amp;Nnify_NO=24407269">
+           AGGR-111-1067-033
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          綠動會股份有限公司
+         </td>
+         <td align="left">
+          04-25299885
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=220222003605&amp;Nnify_NO=24430183">
+           AGGR-111-2003-605
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          新和食品股份有限公司
+         </td>
+         <td align="left">
+          02-25954321
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221649006&amp;Nnify_NO=24956270">
+           AGGR-111-1649-006
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          綠昇貿易行銷有限公司
+         </td>
+         <td align="left">
+          04-26262377
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=220222004016&amp;Nnify_NO=25054571">
+           AGGR-111-2004-016
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          日商沖繩伊藤園股份有限公司台灣分公司
+         </td>
+         <td align="left">
+          0225163123
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=1202211089001&amp;Nnify_NO=53652917">
+           AGGR-111-1A89-001
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          智慧體股份有限公司
+         </td>
+         <td align="left">
+          27670988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221311002&amp;Nnify_NO=54150883">
+           AGGR-111-1311-002
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          智慧體股份有限公司
+         </td>
+         <td align="left">
+          27670988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221311004&amp;Nnify_NO=54150883">
+           AGGR-111-1311-004
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          日商夢多貿易股份有限公司台灣分公司
+         </td>
+         <td align="left">
+          0227200322
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=1202211040001&amp;Nnify_NO=54952841">
+           AGGR-111-1A40-001
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          苗林食品有限公司
+         </td>
+         <td align="left">
+          02-2581-0034
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=120221046001&amp;Nnify_NO=84754875">
+           AGGR-111-1046-001
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309002&amp;Nnify_NO=96972798">
+           AGGR-111-3309-002
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309003&amp;Nnify_NO=96972798">
+           AGGR-111-3309-003
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309010&amp;Nnify_NO=96972798">
+           AGGR-111-3309-010
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309015&amp;Nnify_NO=96972798">
+           AGGR-111-3309-015
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309052&amp;Nnify_NO=96972798">
+           AGGR-111-3309-052
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309069&amp;Nnify_NO=96972798">
+           AGGR-111-3309-069
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309070&amp;Nnify_NO=96972798">
+           AGGR-111-3309-070
+          </a>
+         </td>
+        </tr>
+        <tr>
+         <td>
+          好市多股份有限公司
+         </td>
+         <td align="left">
+          02-87919988
+         </td>
+         <td align="center">
+          <a href="QueryApplyDetail?Case_NO=320223309133&amp;Nnify_NO=96972798">
+           AGGR-111-3309-133
+          </a>
+         </td>
+        </tr>
+       </table>
+      </td>
+     </tr>
+    </table>
+   </p>
+  </form>
+ </body>
+</html>
