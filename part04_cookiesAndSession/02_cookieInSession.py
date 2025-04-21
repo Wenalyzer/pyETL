@@ -6,7 +6,7 @@ headers = {
 
 url = 'https://www.ptt.cc/bbs/Gossiping/index.html'
 
-ss = requests.session()
+ss = requests.sessions.Session()
 ss.cookies['over18'] = '1'
 
 res = ss.get(url, headers=headers)

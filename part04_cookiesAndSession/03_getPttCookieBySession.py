@@ -11,7 +11,7 @@ url_index = 'https://www.ptt.cc/bbs/Gossiping/index.html'
 
 data = {}
 
-ss = requests.session()
+ss = requests.sessions.Session()
 
 res_landing_page = ss.get(url_landing_page, headers=headers)
 soup_landing_page = BeautifulSoup(res_landing_page.text, 'html.parser')
@@ -43,4 +43,4 @@ print(ss.cookies)
 
 res_index = ss.get(url_index, headers=headers)
 
-print(res_index.text)
+# print(res_index.text)

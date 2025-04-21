@@ -7,7 +7,7 @@ from crawler_utilities import extract_article_content
 from crawler_utilities import replace_illegal_chars
 
 # 設定儲存文章的資料夾路徑
-FOLDER_PATH = Path("./test/ptt_articles")
+FOLDER_PATH = Path("./0419/ptt_articles")
 # 建立資料夾（若不存在則自動建立）
 FOLDER_PATH.mkdir(parents=True, exist_ok=True)
 
