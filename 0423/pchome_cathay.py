@@ -13,8 +13,8 @@ print("已啟動 ChromeDriver")
 driver.get(url)
 input("先手動登入")
 
-driver.set_page_load_timeout(0.5) # 設定頁面載入超時為0.5秒，避免refresh卡住
-wait = WebDriverWait(driver, 0.5) # 設定顯式等待，每次最多等0.5秒
+driver.set_page_load_timeout(1) # 設定頁面載入超時為1秒，避免refresh卡住
+wait = WebDriverWait(driver, 1) # 設定顯式等待，每次最多等1秒
 
 # 等待到指定時間
 target_time = datetime.datetime(2025, 4, 24, 16, 0, 0)
